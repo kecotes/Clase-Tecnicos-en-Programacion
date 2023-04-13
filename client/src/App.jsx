@@ -1,18 +1,16 @@
-import { Route, Routes } from "react-router-dom"
-import Navbar from "./components/Navbar"
-import HomeTasks from "./pages/HomeTasks"
-import AddTasks from "./pages/AddTask"
-import List from "./components/List"
+import Navbar from './Components/Navbar.jsx'
+import Footer from './Components/Footer.jsx'
 function App() {
   return (
-    <>
-    <Navbar />
-    
-    <AddTasks />
-    <List />
-    
-
-    </>
+    <div className="main">
+      <header>
+        <Navbar />
+      </header>
+      <section>
+        Soy el contenido de la web
+      </section>
+      <Footer/>
+    </div>
     )
 }
 export default App
