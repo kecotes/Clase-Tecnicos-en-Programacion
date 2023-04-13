@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="encabezado">
+        <nav class=" menu_nav">
+            <figure>
+                <span>logo</span>
+            </figure>
+            <ul class="lista_nav">
+                <li>inicio</li>
+                <li>sobre nosotros</li>
+                <li>catalogo</li>
+                <li>contacto</li>
+            </ul>
+
+            <figure>
+                <span>comprar</span>
+            </figure>
+        </nav>
+    </header>
+
+    Listado de Aprendices
+    <ul id="lista-aprendices"></ul>
+
+    <script>
+        fetch("http://localhost:3000/aprendices")
+        .then(response => response.json())
+        .then(data => {
+            const listaDatos = document.getElementById("lista-aprendices");
+            data.forEach(dato => {
+                const datosConvert = JSON.stringify(dato.nombre)
+                const elementoLista = document.createElement('li');
+                elementoLista.textContent = datosConvert;
+                listaDatos.appendChild(elementoLista); 
+            }); 
+        })
+        .catch(error => console.log("error"))
+    </script>
+</body>
+</html>

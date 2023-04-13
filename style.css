@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(./images/mountain-7871524__340.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::after{
+    content: '';
+    background-color: rgb(18, 18, 18);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.encabezado{
+    border: 1px solid;
+}
+
+/**/
+.menu_nav{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    background-color: rgb(178, 255, 255);
+}
+
+.menu_nav figure{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.lista_nav{
+    list-style: none;
+    display: flex;
+}
+
+.lista_nav li{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.lista_nav li:hover{
+    color: rgb(240, 69, 69);
+}

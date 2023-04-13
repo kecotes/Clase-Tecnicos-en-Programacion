@@ -1,0 +1,8 @@
+CheckList Iniciar una Api
+1. Prendemos xampp
+2. Abrimos proyecto, entramos a api (cd api)
+3. Ejecutamos el proyecto
+(npm run dev)
+4. probamos en el navegador: localhost:3000/aprendices
+Tips:
+Cuando tengan un error prueben cerrar el proyecto en consola con (ctrl + C) y volver a ejecutarlo  
