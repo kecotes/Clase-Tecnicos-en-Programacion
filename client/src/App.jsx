@@ -6,10 +6,9 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <section>
-        Soy el contenido de la web
-      </section>
+
       <Footer/>
+
     </div>
     )
 }
