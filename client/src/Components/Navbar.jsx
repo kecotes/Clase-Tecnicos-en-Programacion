@@ -1,9 +1,10 @@
-
+// import shopp from "../productos_elementos/carts.png"
+// import logoSena from "../productos_elememntos/logoSena.png"
 function Navbar() {
     return ( 
         <div className="header">
             <div className="logo">
-                <img src="#" alt="" srcset="" />
+                {/* <img src={logoSena} alt="" srcset="" /> */}
             </div>
             <div className="menu">
                 <nav>
@@ -15,9 +16,7 @@ function Navbar() {
                     </ul>
                 </nav>
             </div>
-            <div className="register">
-                <input type="button" value="registrarse" />
-            </div>
+            {/* <button><img src={shopp} alt="" /></button> */}
         </div>
     );
 }
