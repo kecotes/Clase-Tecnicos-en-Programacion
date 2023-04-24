@@ -1,6 +1,10 @@
 *{
-  border: 0;
-  margin: 0
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 body{
@@ -12,7 +16,19 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #fff;
+}
+
+.logo{
+  position: relative;
+  width: 20px;
+  height: 43px;
+}
+
+.logo img{
+  width: 50px;
+  position: absolute;
+  left: 20px;
+  
 }
 
 .menu nav ul {
@@ -22,9 +38,24 @@ body{
 }
 
 .menu nav ul li {
-  margin: 0 10px 0px 10px;
+  padding: 18px 20px;
+  cursor: pointer;
+}
+.menu nav ul li:hover {
+  background-color: rgb(2, 201, 45);
 }
 
+.ir-al-carrito{
+  background-color: rgb(255, 255, 255,0.0);
+  cursor: pointer;
+  border: none;
+  margin-right: 20px;
+
+}
+
+.ir-al-carrito img{
+  width: 30px;
+}
 .footer {
   display: flex;
   justify-content: center;

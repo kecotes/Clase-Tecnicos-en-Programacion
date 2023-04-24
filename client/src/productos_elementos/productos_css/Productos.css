@@ -1,0 +1,70 @@
+/*----------Isan css---------*/
+*{
+    margin: none;
+    padding: none;
+    box-sizing: none;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 45px;
+  }
+  
+  .section--cheetos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+  
+  .article--cheetos{
+    margin: 10px 0;
+    border: 1px solid #fff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .article--cheetos p,span{
+    padding: 10px 5px;
+  }
+  
+  .cont--btn-productos{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn-cheetos-comprar{
+    width: 100px;
+    height: 30px;
+    border-radius: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-cheetos-agregar{
+    width: 100px;
+    height: 30px;
+    border-radius: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-cheetos-agregar:hover{
+    background-color: rgb(255, 97, 97);
+    transition: 0.4s;
+  }
+  
+  .btn-cheetos-comprar:hover{
+    background-color: rgb(80, 173, 255);
+    transition: 0.4s;
+  }
+  
+  .btn-cheetos-agregar img{
+    width: 24px;
+  }

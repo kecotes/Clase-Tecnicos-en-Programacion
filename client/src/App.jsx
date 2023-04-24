@@ -1,3 +1,4 @@
+import ProductosCss from './productos_elementos/productos_css/Productos.css'
 import Plantilla from './pages/Plantilla'
 import Inicio from './pages/Inicio'
 import Pedidos from './pages/Pedidos'
@@ -14,7 +15,7 @@ function App() {
   return (
     <div className="main"> 
       <Navbar />
-
+        <Productos/>
         <FormAprendices />
 
       <Footer/>
