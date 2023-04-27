@@ -3,14 +3,15 @@ import FormAprendices from "./FormAprendices";
 import { getAprendices } from "../../api/aprendices.api";
 
 function Aprendices() {
+    //hooks
     const [aprendiz, setAprendiz] = useState([]);
 
     useEffect(() => {
         //Esto se ejecuta al iniciar el componente
         async function getDataAprendices() {
-            const data = await getAprendices();
-            console.log(data.data)
-            setAprendiz(data.data)
+            const response = await getAprendices();
+            //console.log(response.data)
+            setAprendiz(response.data)
         }
         getDataAprendices();
     },[aprendiz]);
