@@ -16,7 +16,8 @@ function App() {
       <Navbar />
 
         <FormAprendices />
-
+        <Usuarios />
+        
       <Footer/>
     </div>
     );

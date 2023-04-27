@@ -16,7 +16,7 @@ function Navbar() {
             </div>
             <div className="register">
                 <input type="button" value="registrarse" />
-            </div>
+            </div>   
         </div>
     );
 }
