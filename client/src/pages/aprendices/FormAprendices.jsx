@@ -1,5 +1,5 @@
 import { Form, Formik } from "formik"
-import { createAprendizRequest } from "../api/aprendices.api";
+import { createAprendizRequest } from "../../api/aprendices.api";
 function FormAprendices() {
     return (
         <div className="form">

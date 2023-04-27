@@ -1,16 +1,21 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
     return ( 
         <div className="header">
             <div className="logo">
-                <img src="#" alt="" srcset="" />
+                <img src="#" alt="" />
             </div>
             <div className="menu">
                 <nav>
                     <ul>
-                        <li>Inicio</li>
-                        <li>Nosotros</li>
-                        <li>Precios</li>
-                        <li>Quienes Somos</li>
+                        <Link to="/inicio">Inicio</Link> |
+                        <Link to="/productos">Productos</Link> |
+                        <Link to="/pedidos">Pedidos</Link> |
+                        <Link to="/tiendas">Tiendas</Link> |
+                        <Link to="/usuarios">Usuarios</Link> |
+                        <Link to="/ambientes">Ambientes</Link> |
+                        <Link to="/aprendices">Aprendices</Link> |
                     </ul>
                 </nav>
             </div>
