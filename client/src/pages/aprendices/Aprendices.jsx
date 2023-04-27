@@ -1,9 +1,37 @@
+import { useEffect, useState } from "react";
 import FormAprendices from "./FormAprendices";
+import { getAprendices } from "../../api/aprendices.api";
 
 function Aprendices() {
+    const [aprendiz, setAprendiz] = useState([]);
+
+    useEffect(() => {
+        //Esto se ejecuta al iniciar el componente
+        async function getDataAprendices() {
+            const data = await getAprendices();
+            console.log(data.data)
+            setAprendiz(data.data)
+        }
+        getDataAprendices();
+    },[aprendiz]);
     return (
-        <div>
-            <FormAprendices/>
+        <div className="Aprendices">
+            <div className="formulario">
+                <FormAprendices/>
+            </div>
+            <div className="listado">
+                <div className="test">
+                    {
+                        aprendiz.map(apr => (
+                            <div className="card" key={apr.id}>
+                                <h3>{apr.nombre}</h3>
+                                <p>{apr.cedula}</p>
+                                <p>{apr.celular}</p>
+                            </div> 
+                        ))
+                    }
+                </div>
+            </div>
         </div>
     );
 }
